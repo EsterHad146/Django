@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+    <title>Churrascaria</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Seu Sabor</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h2>Alimentos Frescos e Deliciosos para Você!</h2>
+                <p>Descubra nossa variedade de produtos e faça seu pedido hoje.</p>
+                <a href="#" class="btn">Ver Produtos</a>
+            </div>
+        </section>
+
+        <section id="featured-products">
+            <div class="container">
+                <h3>Nossos Destaques</h3>
+                <div class="product-grid">
+                    <div class="product-item">
+                        <img src="img/produto1.jpg" alt="Produto 1">
+                        <h4>Produto 1</h4>
+                        <p>Descrição breve do produto 1.</p>
+                        <span>R$ 25,00</span>
+                        <button class="btn add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="img/produto2.jpg" alt="Produto 2">
+                        <h4>Produto 2</h4>
+                        <p>Descrição breve do produto 2.</p>
+                        <span>R$ 30,00</span>
+                        <button class="btn add-to-cart">Adicionar ao Carrinho</button>
+                    </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Seu Sabor. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="{% static "js/script.js" %}"></script>
+    
+</body>
+</html>
