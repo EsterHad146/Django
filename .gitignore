@@ -1,0 +1,69 @@
+# Ignorar arquivos e pastas geradas pelo Python e Django
+# ---------------------------------------------------
+
+# Ambientes virtuais
+venv/
+.venv/
+env/
+.env/
+
+# Arquivos de cache do Python
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+.Python
+build/
+develop-eggs/
+dist/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.roots
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.nox/
+
+# Arquivos de banco de dados
+db.sqlite3
+*.sqlite3
+
+# Arquivos de configurações sensíveis ou locais
+# ---------------------------------------------------
+# Chave secreta do Django e outras configurações locais
+# É CRUCIAL que o seu settings.py não esteja com a SECRET_KEY e DEBUG = True em produção.
+# Se você tiver um arquivo de settings específico para produção com dados sensíveis,
+# certifique-se de que ele esteja ignorado ou de que as variáveis sensíveis sejam carregadas de forma segura.
+# Exemplo: local_settings.py
+local_settings.py
+
+# Variáveis de ambiente (se você usar arquivos .env para carregar variáveis)
+.env
+.flaskenv
+
+# Arquivos de log
+*.log
+log/
+
+# Arquivos de mídia e estáticos gerados em produção (se coletados para STATIC_ROOT/MEDIA_ROOT)
+# Descomente e ajuste os caminhos se você os estiver coletando para fora do controle do Git
+# media/
+# staticfiles/
+
+# Arquivos de IDEs e editores (opcional, dependendo do seu editor)
+# ---------------------------------------------------
+.idea/             # JetBrains IDEs (PyCharm, IntelliJ)
+.vscode/           # VS Code
+*.iml              # JetBrains IDEs
+.DS_Store          # macOS
+Thumbs.db          # Windows
+*.swp              # Vim swap files
+*~                 # Emacs backup files
